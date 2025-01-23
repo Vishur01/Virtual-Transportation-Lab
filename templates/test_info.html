@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="test-info-container">
+    <a href="/" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+
+    <h1>{{ test_info[test_type]['title'] }}</h1>
+
+    <div class="test-info-content">
+        {% if 'tests' in test_info[test_type] %}
+            {% for test_key, test_details in test_info[test_type]['tests'].items() %}
+                <div class="test-section">
+                    <h2>{{ test_details['title'] }}</h2>
+                    <p>{{ test_details['description']|safe }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>{{ test_info[test_type]['description'] }}</p>
+        {% endif %}
+        <img src="{{ test_info[test_type]['image'] }}" alt="{{ test_info[test_type]['title'] }}" class="test-image">
+    </div>
+</div>
+{% endblock %}
