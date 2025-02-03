@@ -6,25 +6,8 @@ app = Flask(__name__)
 
 test_info = {
     'ctindex': {
-        'title': 'CTindex-PS Testing',
+        'title': 'CTindex Testing',
         'tests': {
-            'dynamic_creep': {
-                'title': 'Dynamic Creep Test',
-                'description': (
-                    'The dynamic creep test method determines the resistance to permanent deformation of the '
-                    'bituminous mixture. The test was conducted at 60°C using Dynamic Testing System (DTS)-30 KN '
-                    'as per BS EN 12597-25:2005. A short-term oven-aged (STOA) conditioned cylindrical specimen of '
-                    'diameter 100 mm was used for the testing. Figure 2 shows the setup of the dynamic creep test. '
-                    'The sample was subjected to a cyclic axial block-pulse loading with a frequency of 0.5 Hz and '
-                    'stress of 100 kPa for 3600 repetitions. The cumulative axial strain εₙ in percent (%) after n load '
-                    'applications can be calculated from the following equation: '
-                    '<br><br>'
-                    '<b>εₙ = cumulative axial strain of the specimen after n load applications, in percent (%);</b> '
-                    '<br><b>hₒ = average height as measured by both displacement transducers after preloading of the specimen, '
-                    'in millimeters (mm);</b> <br><b>hₙ = average height measured by both displacement transducers '
-                    'after n load applications, in millimeters (mm).</b>'
-                )
-            },
             'ideal_ct': {
                 'title': 'IDEAL-CT Test',
                 'description': (
@@ -43,6 +26,24 @@ test_info = {
             }
         },
         'image': 'static/ctindex.jpg'
+    },
+    'ps': {
+        'title': 'Permanent Strain Testing',
+        'description': (
+                    'The dynamic creep test method determines the resistance to permanent deformation of the '
+                    'bituminous mixture. The test was conducted at 60°C using Dynamic Testing System (DTS)-30 KN '
+                    'as per BS EN 12597-25:2005. A short-term oven-aged (STOA) conditioned cylindrical specimen of '
+                    'diameter 100 mm was used for the testing. Figure 2 shows the setup of the dynamic creep test. '
+                    'The sample was subjected to a cyclic axial block-pulse loading with a frequency of 0.5 Hz and '
+                    'stress of 100 kPa for 3600 repetitions. The cumulative axial strain εₙ in percent (%) after n load '
+                    'applications can be calculated from the following equation: '
+                    '<br><br>'
+                    '<b>εₙ = cumulative axial strain of the specimen after n load applications, in percent (%);</b> '
+                    '<br><b>hₒ = average height as measured by both displacement transducers after preloading of the specimen, '
+                    'in millimeters (mm);</b> <br><b>hₙ = average height measured by both displacement transducers '
+                    'after n load applications, in millimeters (mm).</b>'
+                ),
+        'image': 'static/its.jpg'
     },
     'its': {
         'title': 'ITS Testing',

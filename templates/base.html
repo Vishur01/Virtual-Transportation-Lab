@@ -106,9 +106,10 @@
 
     .services-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
         margin-top: 40px;
+        padding: 0 20px;
     }
 
     .service-card {
@@ -239,7 +240,10 @@
                 </button>
                 <div class="dropdown-content" id="dropdown">
                     <div class="test-category" onclick="window.location.href='/test-info/ctindex'">
-                        CTindex-PS <i class="fas fa-arrow-right"></i>
+                        CTindex <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="test-category" onclick="window.location.href='/test-info/ps'">
+                        Permanent Strain <i class="fas fa-arrow-right"></i>
                     </div>
                     <div class="test-category" onclick="window.location.href='/test-info/its'">
                         ITS <i class="fas fa-arrow-right"></i>
