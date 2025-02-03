@@ -47,7 +47,33 @@ test_info = {
     },
     'its': {
         'title': 'ITS Testing',
-        'description': 'ITS testing evaluates asphalt mixtures for tensile strength using indirect tensile methods.',
+        'description': (
+            'ITS testing evaluates asphalt mixtures for tensile strength using indirect tensile methods. '
+            '<br><br>'
+            'The Modified Lottman test was conducted to evaluate the moisture sensitivity of the mix. The test involved '
+            'the preparation of two subsets of the specimen: an unconditioned sample and a conditioned sample. '
+            'The unconditioned samples were kept in a water bath for 2 hours at 25˚C, and after 2 hours, an Indirect '
+            'Tensile Strength test was conducted. The load at which the specimen failed, referred to as Pdry, '
+            'and ITSdry (kPa) can be calculated as follows (Equation 4):'
+            '<br><br>'
+            '<b>ITS<sub>dry</sub> = (2000 × P<sub>dry</sub>) / (π × t × D)</b> (Equation 4)'
+            '<br><br>'
+            'The conditioned samples were prepared by saturating the samples between 70%-80%, followed by freezing at '
+            '-18˚C for 24 hours, then thawing at 60˚C for 24 hours, followed by 2 hours of conditioning in a water bath at 25˚C. '
+            'Thereafter, an ITS test was conducted on this specimen, referred to as ITSwet, and can be calculated as follows (Equation 5):'
+            '<br><br>'
+            '<b>ITS<sub>wet</sub> = (2000 × P<sub>wet</sub>) / (π × t × D)</b> (Equation 5)'
+            '<br><br>'
+            'Where:'
+            '<br><b>P</b> = Maximum load (N),'
+            '<br><b>t</b> = Thickness of the sample (mm),'
+            '<br><b>D</b> = Diameter of the sample (mm).'
+            '<br><br>'
+            'Dry ITS (unconditioned) and wet ITS (conditioned) were determined for calculating the Tensile Strength Ratio (TSR) '
+            'of the mix using Equation 6:'
+            '<br><br>'
+            '<b>TSR = ITS<sub>wet</sub> / ITS<sub>dry</sub></b> (Equation 6)'
+        ),
         'image': 'static/its.jpg'
     },
     'volumetric': {
