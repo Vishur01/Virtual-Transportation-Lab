@@ -208,7 +208,7 @@
         .footer {
             flex-shrink: 0;
             text-align: center;
-            padding: 10px 10px; /* Increased padding for better spacing */
+            padding: 20px 10px; /* Increased padding for better spacing */
             background-color: var(--primary-color);
             color: white;
             width: 100%;
@@ -246,4 +246,4 @@
                 justify-content: center;
             }
         }
-    </style>
+</style>

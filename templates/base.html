@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IIT BHU Virtual Transportation Lab{% if test_type %} - {{ test_type|title }}{% endif %}</title>
+    <title>PAATH(lab){% if test_type %} - {{ test_type|title }}{% endif %}</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
 </head>
@@ -193,7 +193,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1200px;
+        max-width: 1300px;
         margin: 0 auto;
     }
 
@@ -294,16 +294,16 @@
                 </button>
                 <div class="dropdown-content" id="dropdown">
                     <div class="test-category" onclick="window.location.href='/test-info/ctindex'">
-                        CTindex <i class="fas fa-arrow-right"></i>
+                        Cracking Test <i class="fas fa-arrow-right"></i>
                     </div>
                     <div class="test-category" onclick="window.location.href='/test-info/ps'">
-                        Permanent Strain <i class="fas fa-arrow-right"></i>
+                        Rutting Test <i class="fas fa-arrow-right"></i>
                     </div>
                     <div class="test-category" onclick="window.location.href='/test-info/its'">
-                        ITS <i class="fas fa-arrow-right"></i>
+                        Moisture Test <i class="fas fa-arrow-right"></i>
                     </div>
                     <div class="test-category" onclick="window.location.href='/test-info/volumetric'">
-                        Volumetric <i class="fas fa-arrow-right"></i>
+                        Volumetric Properties <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
             </div>
@@ -321,12 +321,12 @@
                 <img src="static\grinfra_logo.png.png" alt="GR Infra Logo" class="credit-logo">
             </div>
             <div class="copyright-section">
-                © 2025 IIT BHU. All rights reserved.
+                © 2025 IIT (BHU) Varanasi. All rights reserved.
             </div>
             <div class="contact-section">
-                <p style="margin: 0; padding: 0;"><strong>Contact Us:</strong></p>
-                <p style="margin: 0; padding: 0;">Transportation Engineering Laboratory IIT BHU(varanasi)</p>
-                <p style="margin: 0; padding: 0;">Email</p>
+                <!-- <p style="margin: 0; padding: 0;"><strong>Contact Us:</strong></p>
+                <p style="margin: 0; padding: 0;">Transportation Engineering Laboratory IIT (BHU) Varanasi</p>
+                <p style="margin: 0; padding: 0;">Email</p> -->
             </div>
         </div>
     </footer>
